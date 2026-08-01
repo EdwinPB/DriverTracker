@@ -1,0 +1,871 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Core-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/sources",
+      "importPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Core",
+      "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule",
+      "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/include/Core-Swift.h",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "core"
+      ],
+      "outputFileMapPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift"
+      ],
+      "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Domain-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/sources",
+      "importPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain/Sources/Domain/Domain.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Domain",
+      "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule",
+      "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/Domain.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/include/Domain-Swift.h",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "domain"
+      ],
+      "outputFileMapPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/Domain.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain/Sources/Domain/Domain.swift"
+      ],
+      "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Networking-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/sources",
+      "importPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking/Sources/Networking/Networking.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Networking",
+      "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule",
+      "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/Networking.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/include/Networking-Swift.h",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "networking"
+      ],
+      "outputFileMapPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/Networking.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking/Sources/Networking/Networking.swift"
+      ],
+      "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Storage-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/sources",
+      "importPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/Sources/Storage/Storage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Storage",
+      "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Storage.swiftmodule",
+      "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/Storage.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/include/Storage-Swift.h",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "storage"
+      ],
+      "outputFileMapPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/Storage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Storage.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/Sources/Storage/Storage.swift"
+      ],
+      "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SyncEngine-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/sources",
+      "importPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/Sources/SyncEngine/SyncEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Domain.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Networking.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/Storage.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SyncEngine",
+      "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/SyncEngine.swiftmodule",
+      "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/include/SyncEngine-Swift.h",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "syncengine"
+      ],
+      "outputFileMapPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules/SyncEngine.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/Sources/SyncEngine/SyncEngine.swift"
+      ],
+      "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Core" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Core",
+      "-package-name",
+      "core",
+      "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift",
+      "-I",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/include/Core-Swift.h",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "core",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Domain" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Domain",
+      "-package-name",
+      "domain",
+      "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain/Sources/Domain/Domain.swift",
+      "-I",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/include/Domain-Swift.h",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "domain",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Networking" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Networking",
+      "-package-name",
+      "networking",
+      "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking/Sources/Networking/Networking.swift",
+      "-I",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/include/Networking-Swift.h",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "networking",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Storage" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Storage",
+      "-package-name",
+      "storage",
+      "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/Sources/Storage/Storage.swift",
+      "-I",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/include/Storage-Swift.h",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "storage",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "SyncEngine" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SyncEngine",
+      "-package-name",
+      "syncengine",
+      "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/Sources/SyncEngine/SyncEngine.swift",
+      "-I",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/include/SyncEngine-Swift.h",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "syncengine",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Core" : [
+
+    ],
+    "Domain" : [
+      "Core"
+    ],
+    "Networking" : [
+      "Core"
+    ],
+    "Storage" : [
+      "Domain",
+      "Core"
+    ],
+    "SyncEngine" : [
+      "Storage",
+      "Networking",
+      "Domain",
+      "Core"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Core.build/sources"
+    },
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain/Sources/Domain/Domain.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Domain.build/sources"
+    },
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking/Sources/Networking/Networking.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Networking.build/sources"
+    },
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/Sources/Storage/Storage.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/Storage.build/sources"
+    },
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/Sources/SyncEngine/SyncEngine.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/sources"
+    },
+    "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

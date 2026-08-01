@@ -1,0 +1,3 @@
+module Authentication {
+    header "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Authentication.build/include/Authentication-Swift.h"
+}

@@ -1,0 +1,69 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "core",
+          "kind" : "fileSystem",
+          "location" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core",
+          "name" : "Core"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core"
+        },
+        "subpath" : "core"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "domain",
+          "kind" : "fileSystem",
+          "location" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain",
+          "name" : "Domain"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain"
+        },
+        "subpath" : "domain"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "networking",
+          "kind" : "fileSystem",
+          "location" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking",
+          "name" : "Networking"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Networking"
+        },
+        "subpath" : "networking"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "storage",
+          "kind" : "fileSystem",
+          "location" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage",
+          "name" : "Storage"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage"
+        },
+        "subpath" : "storage"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

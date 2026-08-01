@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Analytics-arm64-apple-macosx-debug.module": ["<Analytics-arm64-apple-macosx-debug.module>"]
+  "Core-arm64-apple-macosx-debug.module": ["<Core-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Analytics-arm64-apple-macosx-debug.module>"]
+  "test": ["<Analytics-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Sources/Analytics/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Sources/Analytics/Analytics.swift"]
+    outputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/sources"]
+    description: "Write auxiliary file /Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/sources"
+
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift"]
+    outputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/sources"]
+    description: "Write auxiliary file /Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/sources"
+
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<Analytics-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/Analytics.swift.o","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Analytics.swiftmodule"]
+    outputs: ["<Analytics-arm64-apple-macosx-debug.module>"]
+
+  "<Core-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"]
+    outputs: ["<Core-arm64-apple-macosx-debug.module>"]
+
+  "C.Analytics-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Sources/Analytics/Analytics.swift","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/sources"]
+    outputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/Analytics.swift.o","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Analytics.swiftmodule"]
+    description: "Compiling Swift Module 'Analytics' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Analytics","-emit-dependencies","-emit-module","-emit-module-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Analytics.swiftmodule","-output-file-map","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/sources","-I","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Analytics.build/include/Analytics-Swift.h","-swift-version","6","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","analytics"]
+
+  "C.Core-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/sources"]
+    outputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"]
+    description: "Compiling Swift Module 'Core' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Core","-emit-dependencies","-emit-module","-emit-module-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule","-output-file-map","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/sources","-I","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/.build/arm64-apple-macosx/debug/Core.build/include/Core-Swift.h","-swift-version","6","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","core"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Sources/Analytics/","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Package.swift","/Users/edwinpolo/Training/ios/DriverTracker/Packages/Analytics/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

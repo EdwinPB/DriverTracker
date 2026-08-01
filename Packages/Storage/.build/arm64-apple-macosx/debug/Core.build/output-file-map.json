@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/primary.swiftdeps"
+  },
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Core/Sources/Core/Core.swift": {
+    "dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/Core.d",
+    "object": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o",
+    "swiftmodule": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/Core~partial.swiftmodule",
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/Core.swiftdeps",
+    "diagnostics": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Storage/.build/arm64-apple-macosx/debug/Core.build/Core.dia"
+  }
+}

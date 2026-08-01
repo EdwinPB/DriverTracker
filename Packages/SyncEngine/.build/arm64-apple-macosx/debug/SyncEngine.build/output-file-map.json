@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/primary.swiftdeps"
+  },
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/Sources/SyncEngine/SyncEngine.swift": {
+    "dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.d",
+    "object": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.swift.o",
+    "swiftmodule": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.swiftdeps",
+    "diagnostics": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/SyncEngine/.build/arm64-apple-macosx/debug/SyncEngine.build/SyncEngine.dia"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/primary.swiftdeps"
+  },
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Domain/Sources/Domain/Domain.swift": {
+    "dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/Domain.d",
+    "object": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/Domain.swift.o",
+    "swiftmodule": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/Domain~partial.swiftmodule",
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/Domain.swiftdeps",
+    "diagnostics": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/Authentication/.build/arm64-apple-macosx/debug/Domain.build/Domain.dia"
+  }
+}
