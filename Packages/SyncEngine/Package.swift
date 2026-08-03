@@ -21,6 +21,9 @@ let package = Package(
                 "Domain",
                 "Networking",
                 "Storage",
+            ],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency"),
             ]
         ),
     ]

@@ -17,6 +17,9 @@ let package = Package(
             dependencies: [
                 "Core",
                 "Domain",
+            ],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency"),
             ]
         ),
     ]

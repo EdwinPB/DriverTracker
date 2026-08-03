@@ -9,3 +9,17 @@ build/
 
 # macOS
 .DS_Store
+
+# Secrets
+.env
+.env.*
+Secrets.swift
+GoogleService-Info.plist
+
+# Certificates
+*.p12
+*.mobileprovision
+
+# Temporary
+*.tmp
+*.swp

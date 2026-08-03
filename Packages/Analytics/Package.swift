@@ -13,7 +13,10 @@ let package = Package(
     targets: [
         .target(
             name: "Analytics",
-            dependencies: ["Core"]
+            dependencies: ["Core"],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency"),
+            ]
         ),
     ]
 )
