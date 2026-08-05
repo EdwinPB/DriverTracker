@@ -1,0 +1,88 @@
+name: Bug report
+description: Report a reproducible bug
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Fill in as much as you can — driver-tracking bugs without device/permission context are hard to reproduce.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences describing the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happens? Include error messages or logs.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps. Include whether the app was foregrounded/backgrounded.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Simulator
+        - Device
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device / model
+      description: e.g. iPhone 15 Pro
+  - type: input
+    id: ios
+    attributes:
+      label: iOS version
+      description: e.g. 18.6
+    validations:
+      required: true
+  - type: dropdown
+    id: config
+    attributes:
+      label: Build configuration
+      options:
+        - Debug
+        - Staging
+        - Release
+    validations:
+      required: true
+  - type: dropdown
+    id: permissions
+    attributes:
+      label: Location permission state
+      description: What permission state triggered the bug?
+      options:
+        - While using the app
+        - Always / background
+        - Denied
+        - Not yet requested
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Console output, crash logs, or screenshots. Redact personal data.

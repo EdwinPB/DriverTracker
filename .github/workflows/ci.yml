@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  architecture:
+    name: Architecture checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Dependency whitelist
+        run: bash Scripts/check-architecture.sh
+      - name: Cycles + dependency rule + Mermaid
+        run: python3 Scripts/check-graph.py
+
+  packages:
+    name: Build Swift packages
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build all packages
+        run: |
+          for p in Core Domain Networking Storage Authentication Location \
+                   SyncEngine Analytics DesignSystem Testing; do
+            swift build --package-path "Packages/$p"
+          done
+
+  app:
+    name: Build app
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Debug
+        run: |
+          xcodebuild -project App/DriverTracker.xcodeproj \
+            -target DriverTracker -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build
+      - name: Build Release
+        run: |
+          xcodebuild -project App/DriverTracker.xcodeproj \
+            -target DriverTracker -configuration Release \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build
+      - name: Build Staging
+        run: |
+          xcodebuild -project App/DriverTracker.xcodeproj \
+            -target DriverTracker -configuration Staging \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO build
