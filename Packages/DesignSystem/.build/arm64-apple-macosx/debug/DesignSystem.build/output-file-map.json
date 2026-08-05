@@ -2,6 +2,13 @@
   "": {
     "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/primary.swiftdeps"
   },
+  "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/ColorToken.swift": {
+    "dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.d",
+    "object": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.swift.o",
+    "swiftmodule": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken~partial.swiftmodule",
+    "swift-dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.swiftdeps",
+    "diagnostics": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.dia"
+  },
   "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/DesignSystem.swift": {
     "dependencies": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/DesignSystem.d",
     "object": "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/DesignSystem.swift.o",

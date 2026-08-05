@@ -111,6 +111,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/ColorToken.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/DesignSystem.swift"
         },
         {
@@ -130,6 +134,7 @@
       "moduleName" : "DesignSystem",
       "moduleOutputPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/Modules/DesignSystem.swiftmodule",
       "objects" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.swift.o",
         "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/DesignSystem.swift.o"
       ],
       "otherArguments" : [
@@ -181,6 +186,10 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/ColorToken.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build/DesignSystem.swift.o"
         },
         {
@@ -190,6 +199,7 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/ColorToken.swift",
         "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/DesignSystem.swift"
       ],
       "tempsPath" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/DesignSystem.build",
@@ -263,6 +273,7 @@
       "-package-name",
       "designsystem",
       "-c",
+      "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/ColorToken.swift",
       "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/DesignSystem.swift",
       "-I",
       "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/.build/arm64-apple-macosx/debug/Modules",
@@ -353,6 +364,10 @@
         {
           "kind" : "virtual",
           "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/edwinpolo/Training/ios/DriverTracker/Packages/DesignSystem/Sources/DesignSystem/ColorToken.swift"
         },
         {
           "kind" : "file",

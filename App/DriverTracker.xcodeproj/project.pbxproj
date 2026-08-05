@@ -10,7 +10,6 @@
 		23C8E80D301E5CA40095E6B9 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 23C8E80C301E5CA40095E6B9 /* Core */; };
 		23C8E810301E5CCE0095E6B9 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 23C8E80F301E5CCE0095E6B9 /* Domain */; };
 		23C8E813301E5CE10095E6B9 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 23C8E812301E5CE10095E6B9 /* DesignSystem */; };
-		23C8E816301E5CF30095E6B9 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 23C8E815301E5CF30095E6B9 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 			files = (
 				23C8E813301E5CE10095E6B9 /* DesignSystem in Frameworks */,
 				23C8E810301E5CCE0095E6B9 /* Domain in Frameworks */,
-				23C8E816301E5CF30095E6B9 /* Networking in Frameworks */,
 				23C8E80D301E5CA40095E6B9 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +77,6 @@
 				23C8E80C301E5CA40095E6B9 /* Core */,
 				23C8E80F301E5CCE0095E6B9 /* Domain */,
 				23C8E812301E5CE10095E6B9 /* DesignSystem */,
-				23C8E815301E5CF30095E6B9 /* Networking */,
 			);
 			productName = DriverTracker;
 			productReference = 23C80856301D021900DD0B4D /* DriverTracker.app */;
@@ -113,7 +110,6 @@
 				23C8E80B301E5CA40095E6B9 /* XCLocalSwiftPackageReference "../Packages/Core" */,
 				23C8E80E301E5CCE0095E6B9 /* XCLocalSwiftPackageReference "../Packages/Domain" */,
 				23C8E811301E5CE10095E6B9 /* XCLocalSwiftPackageReference "../Packages/DesignSystem" */,
-				23C8E814301E5CF30095E6B9 /* XCLocalSwiftPackageReference "../Packages/Networking" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 23C80857301D021900DD0B4D /* Products */;
@@ -470,10 +466,6 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../Packages/DesignSystem;
 		};
-		23C8E814301E5CF30095E6B9 /* XCLocalSwiftPackageReference "../Packages/Networking" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/Networking;
-		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,10 +480,6 @@
 		23C8E812301E5CE10095E6B9 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
-		};
-		23C8E815301E5CF30095E6B9 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
