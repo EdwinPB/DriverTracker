@@ -7,7 +7,7 @@ import SwiftUI
 /// Numeric styles use tabular figures so digits never jiggle.
 ///
 /// Spec: Docs/design-language.md §4.
-public enum TypographyToken {
+public enum Typography {
     case display
     case title
     case headline
@@ -41,7 +41,7 @@ public enum TypographyToken {
 
 public extension View {
     /// Applies a semantic text style to the view.
-    func textStyle(_ token: TypographyToken) -> some View {
+    func textStyle(_ token: Typography) -> some View {
         font(token.font)
     }
 }

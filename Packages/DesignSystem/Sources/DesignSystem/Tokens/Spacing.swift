@@ -7,7 +7,7 @@ import CoreGraphics
 /// sub-8 exception for tight inline gaps.
 ///
 /// Spec: Docs/design-language.md §5.
-public enum SpacingToken {
+public enum Spacing {
     case zero
     case micro
     case small

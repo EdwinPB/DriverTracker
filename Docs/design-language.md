@@ -116,7 +116,7 @@ DesignSystem.
 
 ### 4.1 Semantic text styles
 
-Implemented as `TypographyToken` in DesignSystem (SF Pro, Dynamic Type, `caption` → `AX-L`).
+Implemented as `Typography` in DesignSystem (SF Pro, Dynamic Type, `caption` → `AX-L`).
 
 | Token | System style / weight | Use when |
 |---|---|---|
@@ -149,7 +149,7 @@ Usage rules:
 
 ## 5. Spacing & layout
 
-- **8-point grid.** Implemented as `SpacingToken` in DesignSystem.
+- **8-point grid.** Implemented as `Spacing` in DesignSystem.
 
 | Token | Value | Use when |
 |---|---|---|
@@ -171,8 +171,8 @@ Usage rules:
 
 ## 6. Shape, elevation, components' anatomy
 
-- **Corner radius:** `12` standard controls/cards, `16` sheets and modals, `8` small
-  elements (chips, badges), `full` pills/status.
+- **Corner radius:** `Radius.small` (8) small elements (chips, badges), `Radius.medium` (12)
+  standard controls/cards, `Radius.large` (20) sheets and modals, `Radius.pill` pills/status.
 - **Elevation:** flat by default (readability + Increase Contrast friendly). Use hairlines
   and fills for separation, not shadows. Shadows only on sheets/floating elements, and
   only in light mode — none in dark mode.
@@ -227,8 +227,8 @@ No state may render as a colored dot alone.
 Token names above map 1:1 to Swift enums in the `DesignSystem` package, e.g.:
 
 - `ColorToken.background`, `ColorToken.primary`, `ColorToken.statusError`
-- `SpacingToken.medium` (16), `RadiusToken.standard` (12)
-- `TypographyToken.display`, `TypographyToken.value` (tabular digits), `TypographyToken.button`
+- `Spacing.medium` (16), `Radius.medium` (12)
+- `Typography.display`, `Typography.value` (tabular digits), `Typography.button`
 - Components (`PrimaryButton`, `Card`, `StatusBadge`) are composed **only** from these tokens.
 
 DesignSystem stays dependency-thin (Core only) — the spec above must never require importing
