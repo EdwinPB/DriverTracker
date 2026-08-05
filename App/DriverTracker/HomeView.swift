@@ -1,35 +1,60 @@
 import SwiftUI
+import DesignSystem
 
 struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 0) {
-                    // Current trip status
-                    Divider()
-                    Color.clear.frame(height: 160)
-                    Divider()
+                VStack(spacing: Spacing.xLarge.rawValue) {
+                    ReportingPeriodCard(
+                        title: "Reporting Period",
+                        dateRange: "Jul 29 – Aug 4, 2026",
+                        subtitle: "Weekly summary · Paid every Friday"
+                    )
 
-                    // Earnings / stats
-                    Color.clear.frame(height: 24)
-                    Divider()
-                    Color.clear.frame(height: 120)
-                    Divider()
+                    TodaySummaryCard(trips: 3, distanceMiles: 42.3)
 
-                    // Recent trips
-                    Color.clear.frame(height: 24)
-                    Divider()
-                    Color.clear.frame(height: 200)
-                    Divider()
+                    VStack(spacing: Spacing.medium.rawValue) {
+                        sectionHeader("Recent Trips")
 
-                    Color.clear.frame(height: 24)
+                        EmptyStateView(
+                            systemImage: "car.fill",
+                            title: "No Trips Yet",
+                            subtitle: "Your recorded trips will appear here once you start driving.",
+                            actionTitle: "Start Trip"
+                        ) {}
+                        .frame(minHeight: 240)
+                    }
                 }
+                .padding(.horizontal, Spacing.medium.rawValue)
+                .padding(.vertical, Spacing.large.rawValue)
+                .frame(maxWidth: 600)
+                .frame(maxWidth: .infinity)
             }
+            .background(ColorToken.background)
             .navigationTitle("Driver Tracker")
         }
+    }
+
+    private func sectionHeader(_ title: String) -> some View {
+        Text(title)
+            .textStyle(.headline)
+            .foregroundStyle(ColorToken.textPrimary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .accessibilityAddTraits(.isHeader)
     }
 }
 
 #Preview {
     HomeView()
+}
+
+#Preview("Dynamic Type AX-L") {
+    HomeView()
+        .dynamicTypeSize(.accessibility1)
+}
+
+#Preview("Dark") {
+    HomeView()
+        .preferredColorScheme(.dark)
 }

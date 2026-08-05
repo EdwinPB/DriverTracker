@@ -1,4 +1,5 @@
 import SwiftUI
+import DesignSystem
 
 /// Card summarizing a reporting period (weekly, monthly, custom).
 ///
@@ -8,14 +9,16 @@ import SwiftUI
 /// Callers pass a pre-formatted `dateRange` string so locale-specific
 /// formatting stays with the caller.
 ///
+/// Business-logic specific to the Home feature; lives in the app target.
+///
 /// Spec: Docs/design-language.md §5, §6.
-public struct ReportingPeriodCard: View {
+struct ReportingPeriodCard: View {
 
     private let title: String
     private let dateRange: String
     private let subtitle: String?
 
-    public init(
+    init(
         title: String,
         dateRange: String,
         subtitle: String? = nil
@@ -25,7 +28,7 @@ public struct ReportingPeriodCard: View {
         self.subtitle = subtitle
     }
 
-    public var body: some View {
+    var body: some View {
         AppCard {
             VStack(alignment: .leading, spacing: Spacing.small.rawValue) {
                 Text(title)

@@ -1,19 +1,23 @@
 import SwiftUI
+import DesignSystem
 
 /// Card summarizing today's activity: trip count and distance traveled.
 ///
 /// Two balanced stats separated by a token-colored hairline, composed from
 /// `AppCard` and design tokens only. Numeric values use the `.value` text
 /// style (tabular digits). Distance is formatted to one decimal with `mi`.
+/// Each stat reads as a single VoiceOver element ("3 Trips").
+///
+/// Business-logic specific to the Home feature; lives in the app target.
 ///
 /// Spec: Docs/design-language.md §5, §6.
-public struct TodaySummaryCard: View {
+struct TodaySummaryCard: View {
 
     private let title: String
     private let trips: Int
     private let distanceMiles: Double
 
-    public init(
+    init(
         title: String = "Today",
         trips: Int,
         distanceMiles: Double
@@ -23,7 +27,7 @@ public struct TodaySummaryCard: View {
         self.distanceMiles = distanceMiles
     }
 
-    public var body: some View {
+    var body: some View {
         AppCard {
             VStack(alignment: .leading, spacing: Spacing.medium.rawValue) {
                 Text(title)
@@ -55,6 +59,8 @@ public struct TodaySummaryCard: View {
                 .foregroundStyle(ColorToken.textSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(value) \(label)")
     }
 }
 
