@@ -27,11 +27,17 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Build all packages
+      - name: Build all packages (iOS Simulator)
         run: |
-          for p in Core Domain Networking Storage Authentication Location \
-                   SyncEngine Analytics DesignSystem Testing; do
-            swift build --package-path "Packages/$p"
+          SDK=$(xcrun --sdk iphonesimulator --show-sdk-path)
+          for p in Core Domain Networking Storage Authentication \
+                   Location SyncEngine Analytics DesignSystem Testing; do
+            echo "::group::Building $p"
+            swift build --package-path "Packages/$p" \
+              --triple arm64-apple-ios-simulator \
+              -Xswiftc -sdk -Xswiftc "$SDK" \
+              -Xcc -isysroot -Xcc "$SDK"
+            echo "::endgroup::"
           done
 
   app:
@@ -43,18 +49,18 @@ jobs:
       - name: Build Debug
         run: |
           xcodebuild -project App/DriverTracker.xcodeproj \
-            -target DriverTracker -configuration Debug \
+            -scheme DriverTracker -configuration Debug \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO build
       - name: Build Release
         run: |
           xcodebuild -project App/DriverTracker.xcodeproj \
-            -target DriverTracker -configuration Release \
+            -scheme DriverTracker -configuration Release \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO build
       - name: Build Staging
         run: |
           xcodebuild -project App/DriverTracker.xcodeproj \
-            -target DriverTracker -configuration Staging \
+            -scheme DriverTracker -configuration Staging \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO build
