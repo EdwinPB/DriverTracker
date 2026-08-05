@@ -4,8 +4,13 @@ import SwiftUI
 ///
 /// Composed exclusively from design tokens: optional SF Symbol in the
 /// `.display` size, `.title` heading, `.body` subtitle, and an optional
-/// `PrimaryButton` action. Content is centered and fills the available
-/// space; use inside a sized frame when embedding in a `ScrollView`.
+/// action area. Provide either a titled `PrimaryButton` via
+/// `actionTitle`/`action`, or any custom content via the trailing
+/// `actionArea` builder. Content is centered and fills available space;
+/// use inside a sized frame when embedding in a `ScrollView`.
+///
+/// All text scales with Dynamic Type (caption → AX-L); colors adapt to
+/// Dark Mode. The symbol is hidden from VoiceOver since it is decorative.
 ///
 /// Spec: Docs/design-language.md §5, §7.
 public struct EmptyStateView: View {
@@ -13,8 +18,7 @@ public struct EmptyStateView: View {
     private let systemImage: String?
     private let title: String
     private let subtitle: String?
-    private let actionTitle: String?
-    private let action: (() -> Void)?
+    private let actionContent: AnyView?
 
     public init(
         systemImage: String? = nil,
@@ -26,8 +30,25 @@ public struct EmptyStateView: View {
         self.systemImage = systemImage
         self.title = title
         self.subtitle = subtitle
-        self.actionTitle = actionTitle
-        self.action = action
+        if let actionTitle, let action {
+            self.actionContent = AnyView(
+                PrimaryButton(actionTitle, isFullWidth: false, action: action)
+            )
+        } else {
+            self.actionContent = nil
+        }
+    }
+
+    public init<Content: View>(
+        systemImage: String? = nil,
+        title: String,
+        subtitle: String? = nil,
+        @ViewBuilder actionArea: () -> Content
+    ) {
+        self.systemImage = systemImage
+        self.title = title
+        self.subtitle = subtitle
+        self.actionContent = AnyView(actionArea())
     }
 
     public var body: some View {
@@ -43,6 +64,7 @@ public struct EmptyStateView: View {
                 Text(title)
                     .textStyle(.title)
                     .foregroundStyle(ColorToken.textPrimary)
+                    .multilineTextAlignment(.center)
 
                 if let subtitle {
                     Text(subtitle)
@@ -52,8 +74,8 @@ public struct EmptyStateView: View {
                 }
             }
 
-            if let actionTitle, let action {
-                PrimaryButton(actionTitle, isFullWidth: false, action: action)
+            if let actionContent {
+                actionContent
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -80,6 +102,20 @@ public struct EmptyStateView: View {
     .background(ColorToken.background)
 }
 
+#Preview("Custom action area", traits: .sizeThatFitsLayout) {
+    EmptyStateView(
+        systemImage: "shippingbox",
+        title: "No Weekly Data",
+        subtitle: "Set up your first reporting period to see payouts."
+    ) {
+        HStack(spacing: Spacing.small.rawValue) {
+            PrimaryButton("Import", isFullWidth: false) {}
+            PrimaryButton("Create", isFullWidth: false) {}
+        }
+    }
+    .background(ColorToken.background)
+}
+
 #Preview("Title only", traits: .sizeThatFitsLayout) {
     EmptyStateView(title: "Nothing here")
         .background(ColorToken.background)
@@ -94,4 +130,15 @@ public struct EmptyStateView: View {
     ) {}
     .background(ColorToken.background)
     .preferredColorScheme(.dark)
+}
+
+#Preview("Dynamic Type AX-L", traits: .sizeThatFitsLayout) {
+    EmptyStateView(
+        systemImage: "location.slash",
+        title: "No Trips Yet",
+        subtitle: "Your recorded trips will appear here once you start driving.",
+        actionTitle: "Start Trip"
+    ) {}
+    .background(ColorToken.background)
+    .dynamicTypeSize(.accessibility1)
 }
